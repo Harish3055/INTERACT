@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.ico') }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        OTP Verification</div>
+<form action="/validate" method = "POST">
+  <h4> OTP has been sent to the email id. Please check the email for the confirmation.</h4>
+<div class="field">
+          <input type="text"name="otp" required>
+          <label>Enter OTP</label>
+        </div>
+<p style="color:rgb(255, 0, 55);">{{error}}</p>
+<div class="pass-link">
+
+<br><br>
+</div>
+<div class="field">
+          <input type="submit" value="Verify">
+        </div>
+
+</form>
+</div>
+</body>
+</html>
