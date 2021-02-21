@@ -118,10 +118,9 @@ def verify():
     email = request.form["email"]
     ph_no = request.form['ph_no']
     p['Email'] = str(email)
-    p['Email'] = ''.join(random.choices(string.ascii_letters,
-                                        k=10)) + "@gmail.com"
+    
     p['ph_no'] = str(ph_no)
-    p['ph_no'] = "".join([random.choice(string.digits) for i in range(10)])
+    
     msg = Message('Interact',
                   sender='techspeaks@gmail.com',
                   recipients=[email])
