@@ -24,7 +24,7 @@ initial = [
     "Are you salaried? or Doing your business?"
 ]
 salaried = [
-    "If salaried, pl share your monthly take home salary", "Are you married? "
+    "If salaried, please share your monthly take home salary", "Are you married? "
 ]
 marital = [
     "if yes, what is your wife?", "How many children you have?",
