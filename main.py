@@ -146,7 +146,7 @@ def home():
     return render_template(
         'index2.html',
         qn=
-        "Hello sir, I am your virtual marketing agent, you can answer the series of question once after answering say next to proceed further.",
+        "Hello sir, I am your virtual marketing agent, you can answer the series of question ahead.Say 'NEXT' to proceed further",
         url='next_qn')
 
 
