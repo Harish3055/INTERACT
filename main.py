@@ -93,7 +93,7 @@ f.close()
 
 mydb = mysql.connector.connect(host="localhost",
                                user="root",
-                               password="Harish@3055",
+                               password="password",
                                database="interact")
 conn = mydb.cursor()
 app = Flask(__name__)
